@@ -211,16 +211,92 @@ a{color:#1aaa82;text-decoration:none}
 
 /* Responsive */
 @media(max-width:720px){
+  /* Header: hide nav tabs, compact brand */
+  #emp-header{padding:0 16px;gap:12px}
+  .emp-nav{display:none}
+  .emp-brand span:last-child{display:none}
+  .emp-user span{display:none}
+
+  /* Demo banner: condensed */
+  #demo-banner{padding:8px 16px;gap:8px;flex-wrap:wrap}
+  .demo-badge{font-size:9px;padding:2px 6px}
+  .demo-text{font-size:12px;line-height:1.45}
+  .demo-text strong{display:block;margin-top:2px}
+
+  /* App offset: header(54) + taller banner on mobile */
+  #app{padding-top:130px}
+
+  /* Setup */
+  .setup-wrap{padding:24px 16px 80px}
+  .setup-header h1{font-size:21px}
+  .setup-header p{font-size:14px}
   .form-grid{grid-template-columns:1fr}
   .option-grid.cols2{grid-template-columns:1fr}
+  .form-input,.form-select{font-size:16px} /* prevent iOS zoom on focus */
+  .nav-row{flex-direction:column-reverse;gap:10px}
+  .nav-row .btn{width:100%;text-align:center;min-height:48px}
+
+  /* Dashboard layout */
   .db-layout{flex-direction:column}
-  .db-sidebar{width:100%;border-right:none;border-bottom:1px solid rgba(255,255,255,0.07)}
+  .db-sidebar{width:100%;border-right:none;border-bottom:1px solid rgba(255,255,255,0.07);padding:20px 16px}
+  .db-main{padding:20px 16px}
+  .db-section-head{font-size:18px}
+
+  /* Progress strip: stack vertically */
+  .progress-strip{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px}
+  .progress-nums{font-size:22px}
+
+  /* Gap cards: smaller numbers */
+  .gap-number{font-size:24px}
+
+  /* Module queue rows: collapse right column */
+  .mq-row{grid-template-columns:1fr;padding:16px}
+  .mq-right{display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06)}
+  .mq-title{font-size:15px}
+  .mq-subtitle{font-size:13px}
+
+  /* Team section */
+  .team-section{padding:20px 16px}
+  .team-footer{font-size:11px}
+
+  /* Module view */
   .mod-layout{flex-direction:column}
-  .mod-sidebar{width:100%;border-right:none;border-bottom:1px solid rgba(255,255,255,0.07)}
-  .mod-content{padding:28px 20px}
-  .mod-footer{padding:16px 20px}
-  #emp-header{padding:0 16px}
-  #demo-banner{padding:10px 16px}
+  .mod-sidebar{width:100%;border-right:none;border-bottom:1px solid rgba(255,255,255,0.07);padding:16px}
+  .mod-sidebar-title{font-size:13px}
+  .mod-nav-item{padding:8px 12px;font-size:13px}
+  .mod-content{padding:24px 16px}
+  .mod-title{font-size:22px}
+  .mod-subtitle{font-size:14px;margin-bottom:20px}
+  .mod-eyebrow{font-size:11px}
+  .mod-meta-strip{flex-wrap:wrap;gap:8px;padding:12px 0;margin-bottom:24px}
+  .mod-meta-item{font-size:12px}
+  .sec-head{font-size:18px}
+  .sec-body p{font-size:15px;line-height:1.75}
+  .mod-footer{padding:12px 16px;gap:10px}
+  .mod-footer .btn{min-height:48px;flex:1;text-align:center}
+
+  /* Data callouts: stack key/value */
+  .dc-row{flex-direction:column;gap:1px;margin-bottom:12px}
+  .dc-key{font-size:12px}
+  .dc-val{font-size:15px;font-weight:600}
+  .data-callout{padding:16px}
+
+  /* Tab modal: near full screen */
+  .tab-overlay{padding:0;align-items:flex-end}
+  .tab-modal{max-width:100%;width:100%;max-height:88vh;overflow-y:auto;border-bottom:none}
+  .tab-modal-header,.tab-modal-title,.tab-modal-body,.tab-modal-footer{padding-left:20px;padding-right:20px}
+
+  /* Buttons: always 44px+ touch target */
+  .btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+}
+
+@media(max-width:400px){
+  .emp-brand{font-size:13px}
+  .setup-header h1{font-size:19px}
+  .mod-title{font-size:20px}
+  .gap-number{font-size:22px}
+  .mq-title{font-size:14px}
+  .progress-nums{font-size:20px}
 }
 </style>
 </head>
