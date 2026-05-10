@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JITFE — Just-in-Time Financial Education Platform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>JITFE  -  Just-in-Time Financial Education Platform</title>
 <style>
 :root{--p:#6e353e;--ph:#5a2830;--pl:#83535b;--ps:rgba(110,53,62,0.07);--pb:rgba(110,53,62,0.18);--bg:#fdf9f9;--sf:#fff;--sfr:#f7f0f1;--tx:#1a0c0e;--tm:#6b5052;--tf:#9e8183;--bd:rgba(110,53,62,0.12);--bds:rgba(110,53,62,0.25);--ok:#295f3f;--okb:rgba(41,95,63,0.08);--wn:#8b4f00;--wnb:rgba(139,79,0,0.08);--in:#1b5e8a;--inb:rgba(27,94,138,0.08);--dn:#9b1c1c;--dnb:rgba(155,28,28,0.08);--sh1:0 1px 3px rgba(110,53,62,0.07),0 1px 2px rgba(0,0,0,0.03);--sh2:0 4px 12px rgba(110,53,62,0.09),0 1px 3px rgba(0,0,0,0.04);--sh3:0 12px 40px rgba(110,53,62,0.12),0 4px 8px rgba(0,0,0,0.04);--r:6px;--rs:4px;--rl:10px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -19,7 +19,7 @@ a{color:var(--p)}
 .emp-nav a.it{opacity:.65}.emp-nav a.it:hover{opacity:1}
 .emp-user{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tm)}
 .emp-avatar{width:30px;height:30px;border-radius:50%;background:var(--p);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff}
-#demo-banner{background:rgba(110,53,62,0.05);border-bottom:1px solid var(--pb);padding:7px 32px;position:fixed;top:56px;left:0;right:0;z-index:99;display:flex;align-items:flex-start;gap:12px}
+#demo-banner{background:#f5eced;border-bottom:1px solid var(--pb);padding:7px 32px;position:fixed;top:56px;left:0;right:0;z-index:99;display:flex;align-items:flex-start;gap:12px}
 .demo-badge{background:var(--p);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;letter-spacing:.08em;white-space:nowrap;margin-top:1px;border-radius:3px}
 .demo-text{font-size:12px;color:var(--tm);line-height:1.5}
 .demo-text strong{color:var(--p);font-weight:600}
@@ -36,7 +36,7 @@ a{color:var(--p)}
 .tab-modal-body p{margin-bottom:14px}.tab-modal-body p:last-child{margin-bottom:0}
 .tab-modal-highlight{background:var(--ps);border-left:3px solid var(--p);padding:14px 18px;margin-top:18px;font-size:14px;color:var(--pl);line-height:1.65}
 .tab-modal-footer{border-top:1px solid var(--bd);padding:16px 28px;display:flex;justify-content:flex-end}
-.btn{padding:10px 22px;font-size:14px;font-weight:500;cursor:pointer;border:none;font-family:inherit;transition:all .18s;border-radius:var(--rs);display:inline-flex;align-items:center;gap:6px;line-height:1}
+.btn{padding:10px 22px;font-size:14px;font-weight:500;cursor:pointer;border:none;font-family:inherit;transition:all .18s;border-radius:var(--rs);display:inline-flex;align-items:center;gap:6px;line-height:1;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .btn-p{background:var(--p);color:#fff}.btn-p:hover{background:var(--ph)}
 .btn-g{background:transparent;color:var(--tm);border:1px solid var(--bd)}.btn-g:hover{color:var(--tx);border-color:var(--bds);background:var(--sfr)}
 .btn-o{background:transparent;color:var(--p);border:1.5px solid var(--p)}.btn-o:hover{background:var(--ps)}
@@ -104,7 +104,7 @@ a{color:var(--p)}
 .fsel:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(110,53,62,0.08)}
 .fg2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .og{display:grid;gap:8px}.og2{grid-template-columns:1fr 1fr}
-.ob{padding:12px 14px;background:var(--bg);border:1.5px solid var(--bd);cursor:pointer;text-align:left;color:var(--tx);font-size:14px;font-family:inherit;transition:all .15s;position:relative;border-radius:var(--rs);line-height:1.35}
+.ob{padding:12px 14px;background:var(--bg);border:1.5px solid var(--bd);cursor:pointer;text-align:left;color:var(--tx);font-size:14px;font-family:inherit;transition:all .15s;position:relative;border-radius:var(--rs);line-height:1.35;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .ob:hover{border-color:var(--pb);background:var(--ps)}.ob.sel{border-color:var(--p);background:rgba(110,53,62,0.05)}
 .ob.sel::after{content:'✓';position:absolute;top:12px;right:12px;font-size:11px;color:var(--p);font-weight:700}
 .on{font-size:11px;color:var(--tf);margin-top:3px;display:block}
@@ -129,7 +129,7 @@ a{color:var(--p)}
 .gap-bw{background:rgba(110,53,62,0.08);height:5px;margin-top:10px;border-radius:3px;overflow:hidden}
 .gap-bf{height:5px;border-radius:3px;transition:width .6s ease}
 .gap-bf.ok{background:var(--ok)}.gap-bf.wn{background:var(--wn)}.gap-bf.dn{background:var(--dn)}
-.gap-a{font-size:12px;color:var(--tf);margin-top:6px;line-height:1.4}
+.gap-a{font-size:13px;color:var(--tf);margin-top:6px;line-height:1.4}
 .tag{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;font-size:12px;font-weight:500;border-radius:3px}
 .tag-p{background:var(--ps);color:var(--p)}.tag-ok{background:var(--okb);color:var(--ok)}
 .tag-wn{background:var(--wnb);color:var(--wn)}.tag-in{background:var(--inb);color:var(--in)}
@@ -139,7 +139,7 @@ a{color:var(--p)}
 .mqr:last-child{border-bottom:none}.mqr:hover{background:rgba(110,53,62,0.03)}
 .mqr.done{border-left-color:var(--ok)}.mqr.next{border-left-color:var(--wn);background:rgba(139,79,0,0.02)}
 .mq-ttl{font-size:15px;font-weight:600;color:var(--tx);margin-bottom:4px;line-height:1.3}
-.mq-sub{font-size:13px;color:var(--tm);margin-bottom:8px;line-height:1.4}
+.mq-sub{font-size:14px;color:var(--tm);margin-bottom:8px;line-height:1.4}
 .mq-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .mq-trg{font-size:12px;color:var(--tf)}
 .mq-r{text-align:right}.mq-t{font-size:13px;color:var(--tm);white-space:nowrap}
@@ -148,24 +148,24 @@ a{color:var(--p)}
 .db-ss{font-size:14px;color:var(--tm);margin-bottom:16px;line-height:1.6;max-width:560px}
 .prog-strip{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:18px;box-shadow:var(--sh1)}
 .prog-n{font-size:26px;font-weight:800;color:var(--p);letter-spacing:-.03em;font-variant-numeric:tabular-nums;flex-shrink:0}
-.prog-s{font-size:13px;color:var(--tm);line-height:1.5}
+.prog-s{font-size:14px;color:var(--tm);line-height:1.5}
 .prog-bo{flex:1;height:5px;background:var(--bd);border-radius:3px;overflow:hidden}
 .prog-bi{height:5px;background:var(--p);border-radius:3px;transition:width .5s ease}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(139,79,0,0)}50%{box-shadow:0 0 0 3px rgba(139,79,0,0.1)}}
 .mqr.nup{animation:pulse 2.5s ease-in-out infinite}
 
 /* CHARTS */
-.charts-row{display:grid;grid-template-columns:3fr 1fr;gap:14px;margin-bottom:16px}
-.chart-card{background:var(--sf);border:1px solid var(--bd);border-radius:var(--rl);padding:22px;box-shadow:var(--sh1)}
+.charts-row{display:grid;grid-template-columns:3fr 1fr;gap:14px;margin-bottom:16px;align-items:start}
+.chart-card{background:var(--sf);border:1px solid var(--bd);border-radius:var(--rl);padding:20px;box-shadow:var(--sh1);overflow:hidden}
 .ct-ttl{font-size:14px;font-weight:700;color:var(--tx);margin-bottom:3px}
-.ct-sub{font-size:12px;color:var(--tf);margin-bottom:16px;line-height:1.4}
-.ct-wrap{display:flex;gap:14px;align-items:flex-end;height:150px}
+.ct-sub{font-size:13px;color:var(--tm);margin-bottom:14px;line-height:1.4}
+.ct-wrap{display:flex;gap:14px;align-items:flex-end;height:160px}
 .bar-g{display:flex;flex-direction:column;align-items:center;flex:1;gap:5px}
 .bar-o{width:100%;background:var(--sfr);border-radius:4px 4px 0 0;position:relative;overflow:hidden;flex:1}
 .bar-i{position:absolute;bottom:0;left:0;right:0;border-radius:4px 4px 0 0;transition:height .9s cubic-bezier(.34,1.56,.64,1)}
 .bar-lbl{font-size:11px;color:var(--tf);text-align:center;font-weight:500;line-height:1.3}
 .bar-val{font-size:12px;font-weight:700;color:var(--tx);font-variant-numeric:tabular-nums;text-align:center}
-.ring-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%}
+.ring-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center}
 .ring-sub{font-size:11px;color:var(--tf);text-align:center;line-height:1.4;margin-top:8px;max-width:100px}
 
 /* ACTION */
@@ -177,9 +177,9 @@ a{color:var(--p)}
 .ac-chk{width:20px;height:20px;border-radius:4px;border:2px solid var(--bd);flex-shrink:0;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;margin-top:2px;background:var(--bg)}
 .ac-chk.on{background:var(--p);border-color:var(--p);color:#fff;font-size:11px}
 .ac-body{flex:1;min-width:0}
-.ac-lbl{font-size:14px;color:var(--tx);line-height:1.4;margin-bottom:4px;font-weight:500}
+.ac-lbl{font-size:15px;color:var(--tx);line-height:1.4;margin-bottom:4px;font-weight:500}
 .ac-lbl.dk{text-decoration:line-through;color:var(--tf)}
-.ac-det{font-size:12px;color:var(--tf);line-height:1.45;margin-bottom:7px}
+.ac-det{font-size:13px;color:var(--tf);line-height:1.5;margin-bottom:7px}
 .ac-dr{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .ac-dl{font-size:12px;color:var(--tf)}
 .ac-di{font-size:12px;color:var(--tx);border:1px solid var(--bd);background:var(--bg);padding:3px 8px;border-radius:3px;font-family:inherit;outline:none}
@@ -234,21 +234,84 @@ a{color:var(--p)}
 .d5{animation-delay:.25s}.d6{animation-delay:.3s}.d7{animation-delay:.35s}.d8{animation-delay:.4s}
 @media(max-width:900px){.prof-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:720px){
-  #emp-header{padding:0 16px}.emp-nav{display:none}.emp-brand-sub{display:none}
-  #demo-banner{position:static;margin-top:56px;padding:8px 16px}#app{padding-top:0}
-  .setup-wrap{padding:24px 16px 80px}.fg2{grid-template-columns:1fr}.og2{grid-template-columns:1fr}
-  .nav-row{flex-direction:column-reverse;gap:10px}.nav-row .btn{width:100%}
-  .db-layout{flex-direction:column}.db-sidebar{width:100%;border-right:none;border-bottom:1px solid var(--bd);padding:18px 16px}
-  .db-main{padding:18px 16px}.charts-row{grid-template-columns:1fr}
-  .mod-layout{flex-direction:column}.mod-sb{width:100%;border-right:none;border-bottom:1px solid var(--bd);padding:16px}
-  .mod-content{padding:24px 16px}.mod-footer{padding:12px 16px}
-  .how-steps::before{display:none}.how-steps{flex-direction:column;gap:14px;align-items:flex-start}
-  .how-step{display:flex;align-items:flex-start;gap:14px;text-align:left;width:100%}
-  .how-num{flex-shrink:0;margin:0}.how-desc{max-width:none}
-  .hero h1{font-size:30px}.land-wrap{padding:28px 16px 60px}
-  .stepper::before{display:none}.st-sub{display:none}
+  #emp-header{padding:0 14px;height:52px}
+  .emp-nav{display:none}.emp-brand-sub{display:none}.emp-user span{display:none}
+  #demo-banner{position:static;margin-top:52px;padding:8px 14px;font-size:11px}
+  #app{padding-top:0}
+  .land-wrap{padding:20px 14px 48px}
+  .hero{padding:28px 0 36px}
+  .hero h1{font-size:26px;letter-spacing:-.02em}
+  .hero-sub{font-size:15px}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%;justify-content:center}
+  .hero-cite{font-size:11px}
+  .sec-title{font-size:20px}
+  .how-wrap{margin-bottom:40px}
+  .how-steps::before{display:none}
+  .how-steps{flex-direction:column;gap:14px;align-items:flex-start}
+  .how-step{display:flex;align-items:flex-start;gap:12px;text-align:left;width:100%}
+  .how-num{flex-shrink:0;margin:0;width:44px;height:44px;font-size:16px}
+  .how-desc{max-width:none;font-size:13px}
+  .how-ttl{font-size:14px}
+  .prof-grid{grid-template-columns:1fr}
+  .setup-wrap{padding:16px 14px 72px}
+  .stepper::before{display:none}
+  .stepper{gap:8px;justify-content:space-around}
+  .st-sub{display:none}
+  .st-circle{width:34px;height:34px;font-size:12px}
+  .st-lbl{font-size:10px}
+  .setup-card{padding:20px 16px}
+  .fg2{grid-template-columns:1fr}
+  .og2{grid-template-columns:1fr}
+  .nav-row{flex-direction:column-reverse;gap:10px}
+  .nav-row .btn{width:100%;justify-content:center;min-height:48px}
+  .db-layout{flex-direction:column}
+  .db-sidebar{width:100%;border-right:none;border-bottom:1px solid var(--bd);padding:16px 14px}
+  .db-main{padding:16px 14px}
+  .db-sh{font-size:17px}
+  .db-ss{font-size:13px;margin-bottom:12px}
+  .charts-row{grid-template-columns:1fr}
+  .prog-strip{flex-direction:column;align-items:flex-start;gap:8px;padding:14px}
+  .prog-bo{width:100%}
+  .mqr{padding:14px 16px;grid-template-columns:1fr}
+  .mq-r{display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:8px;padding-top:8px;border-top:1px solid var(--bd)}
+  .mq-ttl{font-size:14px}
+  .mq-sub{font-size:13px}
+  .ac-card{padding:16px 14px}
+  .ac-item{gap:10px}
+  .ac-lbl{font-size:14px}
+  .ac-det{font-size:12px}
+  .ac-dr{flex-wrap:wrap;gap:6px}
+  .mod-layout{flex-direction:column}
+  .mod-sb{width:100%;border-right:none;border-bottom:1px solid var(--bd);padding:14px}
+  .mod-content{padding:20px 14px}
+  .mod-footer{padding:12px 14px}
+  .mod-ttl{font-size:22px}
+  .mod-stl{font-size:14px;margin-bottom:20px}
+  .sec-head{font-size:17px}
+  .sec-body p{font-size:14px;line-height:1.75}
+  .data-callout{padding:14px 16px}
+  .dc-row{flex-direction:column;gap:2px;margin-bottom:10px}
+  .dc-val{font-size:15px}
+  .team-section{padding:16px 14px}
+  .gap-card{padding:12px}
+  .gap-n{font-size:22px}
+  .btn-lg{padding:12px 22px;font-size:15px}
+  .tab-overlay{padding:0;align-items:flex-end}
+  .tab-modal{max-width:100%;border-bottom:none;border-radius:var(--rl) var(--rl) 0 0;max-height:85vh;overflow-y:auto}
+  .tab-modal-header,.tab-modal-title,.tab-modal-body,.tab-modal-footer{padding-left:18px;padding-right:18px}
 }
-@media(max-width:560px){.prof-grid{grid-template-columns:1fr}}
+@media(max-width:560px){
+  .prof-grid{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  .emp-logo{width:28px;height:28px;font-size:11px}
+}
+@media(hover:none){
+  .prof-card:hover{transform:none}
+  .btn:active{opacity:0.85}
+  .mqr:active{background:rgba(110,53,62,0.05)}
+  .ob:active{border-color:var(--p);background:var(--ps)}
+}
 </style>
 </head>
 <body>
@@ -271,7 +334,7 @@ a{color:var(--p)}
 </header>
 <div id="demo-banner">
   <span class="demo-badge">DEMO</span>
-  <div class="demo-text">In a live deployment, this launches automatically at onboarding and job transitions. <strong>Your age, salary, savings, location, tenure, and plan details are pulled directly from Workday — no setup required.</strong> Select a worker profile below or configure your own.</div>
+  <div class="demo-text">In a live deployment, this launches automatically at onboarding and job transitions. <strong>Your age, salary, savings, location, tenure, and plan details are pulled directly from Workday  -  no setup required.</strong> Select a worker profile below or configure your own.</div>
 </div>
 <div class="tab-overlay" id="tab-overlay" style="display:none" onclick="if(event.target===this)closeTabModal()">
   <div class="tab-modal">
@@ -286,7 +349,7 @@ a{color:var(--p)}
 </div>
 <main id="app"></main>
 <script>
-const TAB_INFO={benefits:{badge:'BENEFITS ADMINISTRATION',title:'Benefits Enrollment and Management',body:`<p>In a full employer deployment, this tab connects to your benefits administration platform, covering health insurance, dental, vision, FSA/HSA accounts, life insurance, and retirement plan enrollment.</p><p>The JITFE financial education system integrates directly here. When a worker opens a 401(k) enrollment form for the first time, the system checks whether the relevant financial literacy module has been completed. If not, the module launches automatically before the form proceeds — the primary mechanism through which the mandate connects education to the moment of financial decision (Murphy et al., 2026).</p><div class="tab-modal-highlight">In a live deployment at Meridian Group, completing assigned JITFE modules is a prerequisite for finalizing 401(k) enrollment.</div>`},compliance:{badge:'COMPLIANCE TRAINING',title:'Mandatory Training and Compliance',body:`<p>This section manages all federally mandated training including harassment prevention, workplace safety (OSHA), data privacy, and anti-discrimination policy.</p><p>Under the proposed JITFE mandate, financial literacy modules would appear here as a federally required training category. The Department of Labor, in coordination with the CFPB, would establish minimum module requirements and a standardized content framework — mirroring the approach used for mandatory OSHA safety training (Murphy et al., 2026).</p><div class="tab-modal-highlight">The JITFE mandate positions financial education as a compliance obligation, not a perk. This placement drives completion rates by triggering the same HR enforcement that existing mandatory training receives.</div>`},learning:{badge:'LEARNING MANAGEMENT',title:'My Learning and Development',body:`<p>This section provides access to the full Learning Management System including optional professional development courses, leadership training, and skill certifications.</p><p>JITFE completion records are stored here. HR administrators can view team-level completion rates, identify workers who have not completed assigned modules, and generate compliance reports. The completion data integrates with payroll records and HR files, allowing the system to trigger modules automatically at future career events such as job changes, salary adjustments, and milestone birthdays.</p><div class="tab-modal-highlight">This proof of concept focuses on the mandated Financial Wellness track. The My Learning section is where completion records are maintained over a worker's full tenure.</div>`}};
+const TAB_INFO={benefits:{badge:'BENEFITS ADMINISTRATION',title:'Benefits Enrollment and Management',body:`<p>In a full employer deployment, this tab connects to your benefits administration platform, covering health insurance, dental, vision, FSA/HSA accounts, life insurance, and retirement plan enrollment.</p><p>The JITFE financial education system integrates directly here. When a worker opens a 401(k) enrollment form for the first time, the system checks whether the relevant financial literacy module has been completed. If not, the module launches automatically before the form proceeds  -  the primary mechanism through which the mandate connects education to the moment of financial decision (Murphy et al., 2026).</p><div class="tab-modal-highlight">In a live deployment at Meridian Group, completing assigned JITFE modules is a prerequisite for finalizing 401(k) enrollment.</div>`},compliance:{badge:'COMPLIANCE TRAINING',title:'Mandatory Training and Compliance',body:`<p>This section manages all federally mandated training including harassment prevention, workplace safety (OSHA), data privacy, and anti-discrimination policy.</p><p>Under the proposed JITFE mandate, financial literacy modules would appear here as a federally required training category. The Department of Labor, in coordination with the CFPB, would establish minimum module requirements and a standardized content framework  -  mirroring the approach used for mandatory OSHA safety training (Murphy et al., 2026).</p><div class="tab-modal-highlight">The JITFE mandate positions financial education as a compliance obligation, not a perk. This placement drives completion rates by triggering the same HR enforcement that existing mandatory training receives.</div>`},learning:{badge:'LEARNING MANAGEMENT',title:'My Learning and Development',body:`<p>This section provides access to the full Learning Management System including optional professional development courses, leadership training, and skill certifications.</p><p>JITFE completion records are stored here. HR administrators can view team-level completion rates, identify workers who have not completed assigned modules, and generate compliance reports. The completion data integrates with payroll records and HR files, allowing the system to trigger modules automatically at future career events such as job changes, salary adjustments, and milestone birthdays.</p><div class="tab-modal-highlight">This proof of concept focuses on the mandated Financial Wellness track. The My Learning section is where completion records are maintained over a worker's full tenure.</div>`}};
 function openTabModal(key){const i=TAB_INFO[key];document.getElementById('tab-badge').textContent=i.badge;document.getElementById('tab-title').textContent=i.title;document.getElementById('tab-body').innerHTML=i.body;document.getElementById('tab-overlay').style.display='flex';document.body.style.overflow='hidden'}
 function closeTabModal(){document.getElementById('tab-overlay').style.display='none';document.body.style.overflow=''}
 
@@ -295,14 +358,14 @@ const LP=[
   {name:'Carlos Rivera',age:31,role:'Software Engineer',loc:'Austin, TX',emoji:'💻',badge:'Job Transition',cc:'#1a7a5a',sit:'Changing employers with $42k in a 401(k). 41.4% of workers cash out at job transitions because the rollover process is too complex (UBC Sauder, 2023).',sv:42000,sal:95000,st:'TX',et:'fulltime',pt:'both',mt:'full',mp:100,mu:5,ye:3,hd:'yes',da:18000,dr:5.5,gd:'man',rc:'hispanic'},
   {name:'Jennifer Walsh',age:45,role:'Registered Nurse',loc:'Chicago, IL',emoji:'🏥',badge:'Mid-Career',cc:'#8b4f00',sit:'Behind on savings after a caregiving career break. Women retire with ~30% less than men on average (Federal Reserve, 2022). Catch-up contributions are her primary tool.',sv:87000,sal:78000,st:'IL',et:'fulltime',pt:'traditional',mt:'partial',mp:50,mu:6,ye:8,hd:'no',da:0,dr:0,gd:'woman',rc:'white'},
   {name:'Robert Kim',age:58,role:'Public School Teacher',loc:'Atlanta, GA',emoji:'📚',badge:'Pre-Retirement',cc:'#9b1c1c',sit:'Seven years from retirement. Delaying Social Security from 67 to 70 adds 24% to his monthly benefit permanently (Social Security Administration, 2025).',sv:215000,sal:65000,st:'GA',et:'fulltime',pt:'traditional',mt:'none',mp:0,mu:0,ye:22,hd:'no',da:0,dr:0,gd:'man',rc:'asian'},
-  {name:'Priya Patel',age:28,role:'Freelance Designer',loc:'New York, NY',emoji:'🎨',badge:'Gig Worker',cc:'#5b4fa3',sit:'1099 contractor — structurally excluded from employer plans. One of an estimated 9M+ gig workers with no retirement plan access (Ghilarducci, 2025).',sv:8000,sal:62000,st:'NY',et:'gig',pt:'none',mt:'none',mp:0,mu:0,ye:0,hd:'yes',da:32000,dr:6.8,gd:'woman',rc:'asian'},
+  {name:'Priya Patel',age:28,role:'Freelance Designer',loc:'New York, NY',emoji:'🎨',badge:'Gig Worker',cc:'#5b4fa3',sit:'1099 contractor  -  structurally excluded from employer plans. One of an estimated 9M+ gig workers with no retirement plan access (Ghilarducci, 2025).',sv:8000,sal:62000,st:'NY',et:'gig',pt:'none',mt:'none',mp:0,mu:0,ye:0,hd:'yes',da:32000,dr:6.8,gd:'woman',rc:'asian'},
   {name:'David Thompson',age:52,role:'Operations Manager',loc:'Detroit, MI',emoji:'🔄',badge:'Rebuilding',cc:'#5a3a7a',sit:'Restarting savings after a costly divorce at 48. Workers 60–63 can now contribute an additional $11,250/year under SECURE 2.0 Act (IRS, 2025).',sv:34000,sal:82000,st:'MI',et:'fulltime',pt:'both',mt:'full',mp:100,mu:4,ye:5,hd:'no',da:0,dr:0,gd:'man',rc:'black'},
   {name:'Aisha Johnson',age:35,role:'Retail Team Lead',loc:'Memphis, TN',emoji:'🏪',badge:'Part-Time Gap',cc:'#166044',sit:'Part-time hours excluded her from the employer plan. She is one of ~17–18M part-time workers with no retirement plan access (Bureau of Labor Statistics, 2025).',sv:12000,sal:44000,st:'TN',et:'parttime',pt:'none',mt:'none',mp:0,mu:0,ye:4,hd:'yes',da:9500,dr:7.2,gd:'woman',rc:'black'},
-  {name:'Linda Reyes',age:62,role:'Administrative Assistant',loc:'Miami, FL',emoji:'⚕️',badge:'Near Retirement',cc:'#b5390a',sit:'Carrying $28k in medical debt — part of the 41% of American adults holding healthcare debt (Peter G. Peterson Foundation, 2024) — that is delaying her retirement.',sv:95000,sal:52000,st:'FL',et:'fulltime',pt:'traditional',mt:'partial',mp:50,mu:3,ye:14,hd:'yes',da:28000,dr:12.9,gd:'woman',rc:'hispanic'}
+  {name:'Linda Reyes',age:62,role:'Administrative Assistant',loc:'Miami, FL',emoji:'⚕️',badge:'Near Retirement',cc:'#b5390a',sit:'Carrying $28k in medical debt  -  part of the 41% of American adults holding healthcare debt (Peter G. Peterson Foundation, 2024)  -  that is delaying her retirement.',sv:95000,sal:52000,st:'FL',et:'fulltime',pt:'traditional',mt:'partial',mp:50,mu:3,ye:14,hd:'yes',da:28000,dr:12.9,gd:'woman',rc:'hispanic'}
 ];
 
 const STAX={CA:0.093,NY:0.0685,NJ:0.0637,OR:0.099,MN:0.0985,MA:0.09,VT:0.0875,SC:0.07,CT:0.0699,WI:0.0765,MT:0.0675,ME:0.0715,ID:0.058,OK:0.05,VA:0.0575,NC:0.0499,GA:0.0549,AL:0.05,KY:0.045,OH:0.04,IN:0.032,PA:0.0307,MI:0.0425,IL:0.0495,CO:0.044,UT:0.0485,AZ:0.025,MO:0.0495,ND:0.0290,LA:0.0425,FL:0,TX:0,WA:0,NV:0,WY:0,SD:0,AK:0,NH:0,TN:0};
-const SPGM={CA:{name:'CalSavers',rate:5,note:'Over 736,000 accounts and $1.49B in assets as of 2026 (Congressional Research Service, 2025).'},OR:{name:'OregonSaves',rate:5,note:'Launched 2017. Over 151,000 funded accounts and $445M in assets — first state-run auto-IRA in the country (Oregon Retirement Savings Board, 2026).'},IL:{name:'Illinois Secure Choice',rate:5,note:'~$330M in assets for employers with 25+ employees (Congressional Research Service, 2025).'},CO:{name:'Colorado SecureSavings',rate:5,note:'5+ employee threshold. Part of a multi-state portability partnership.'},NY:{name:'New York Secure Choice',rate:3,note:'Launched October 2025. 10+ employee threshold (Congressional Research Service, 2025).'},CT:{name:'Connecticut MyCTSavings',rate:3,note:'Available to private-sector workers without employer plans.'},MD:{name:'Maryland Saves',rate:5,note:'Employer-facilitated payroll deduction IRA.'}};
+const SPGM={CA:{name:'CalSavers',rate:5,note:'Over 736,000 accounts and $1.49B in assets as of 2026 (Congressional Research Service, 2025).'},OR:{name:'OregonSaves',rate:5,note:'Launched 2017. Over 151,000 funded accounts and $445M in assets  -  first state-run auto-IRA in the country (Oregon Retirement Savings Board, 2026).'},IL:{name:'Illinois Secure Choice',rate:5,note:'~$330M in assets for employers with 25+ employees (Congressional Research Service, 2025).'},CO:{name:'Colorado SecureSavings',rate:5,note:'5+ employee threshold. Part of a multi-state portability partnership.'},NY:{name:'New York Secure Choice',rate:3,note:'Launched October 2025. 10+ employee threshold (Congressional Research Service, 2025).'},CT:{name:'Connecticut MyCTSavings',rate:3,note:'Available to private-sector workers without employer plans.'},MD:{name:'Maryland Saves',rate:5,note:'Employer-facilitated payroll deduction IRA.'}};
 const USS=['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY'];
 const SN={AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'};
 const PROFS=[{id:'early',label:'Early Career',range:'18–24',tag:'FOUNDATION',color:'#2d6fa3',modules:['compound','paycheck','matching','rollover']},{id:'young',label:'Young Professional',range:'25–34',tag:'NAVIGATION',color:'#6e353e',modules:['vesting','debt','matching','rollover']},{id:'mid',label:'Mid-Career',range:'35–54',tag:'ACCELERATION',color:'#8b4f00',modules:['catchup','rollover','hardship','socsec']},{id:'pre',label:'Pre-Retirement',range:'55+',tag:'TRANSITION',color:'#9b1c1c',modules:['socsec','withdrawal','catchup']}];
@@ -322,20 +385,20 @@ function getActionItems(f){
   const st=gstats(f),sp=SPGM[f.state],items=[];
   if(f.planType!=='none'){
     items.push({id:'enroll',label:'Confirm active enrollment in employer retirement plan',det:'Verify your contribution rate and fund selection in the benefits portal. The most common behavioral failure is passive non-enrollment even when a plan is available (Madrian & Shea, 2001).',pri:'high'});
-    if(f.matchType!=='none')items.push({id:'match',label:`Set contribution to ${f.matchUpTo}% to capture the full employer match`,det:`This captures ${fmtM(st.matchAnnual)}/year in employer contributions — a guaranteed ${f.matchPct}% return before any investment gains. Failing to do this is declining part of your compensation (Bureau of Labor Statistics, 2023).`,pri:'high'});
+    if(f.matchType!=='none')items.push({id:'match',label:`Set contribution to ${f.matchUpTo}% to capture the full employer match`,det:`This captures ${fmtM(st.matchAnnual)}/year in employer contributions  -  a guaranteed ${f.matchPct}% return before any investment gains. Failing to do this is declining part of your compensation (Bureau of Labor Statistics, 2023).`,pri:'high'});
   }else if(sp){
-    items.push({id:'state-ira',label:`Enroll in ${sp.name} — your state auto-IRA program`,det:`Default contribution: ${sp.rate}% of gross pay. ${sp.note}`,pri:'high'});
+    items.push({id:'state-ira',label:`Enroll in ${sp.name}  -  your state auto-IRA program`,det:`Default contribution: ${sp.rate}% of gross pay. ${sp.note}`,pri:'high'});
   }else{
-    items.push({id:'open-ira',label:'Open a Roth IRA — 2025 contribution limit: $7,000/year',det:'Recommended custodians: Vanguard, Fidelity, Schwab. Choose a target-date index fund matching your planned retirement year. No employer required.',pri:'high'});
+    items.push({id:'open-ira',label:'Open a Roth IRA  -  2025 contribution limit: $7,000/year',det:'Recommended custodians: Vanguard, Fidelity, Schwab. Choose a target-date index fund matching your planned retirement year. No employer required.',pri:'high'});
   }
-  items.push({id:'ben',label:'Update beneficiary designations on all retirement accounts',det:'Beneficiary designations override your will and do not automatically update after life changes — marriage, divorce, birth, or death.',pri:'high'});
+  items.push({id:'ben',label:'Update beneficiary designations on all retirement accounts',det:'Beneficiary designations override your will and do not automatically update after life changes  -  marriage, divorce, birth, or death.',pri:'high'});
   items.push({id:'ssa',label:'Create a free account at ssa.gov/myaccount and review your earnings record',det:'Errors in your earnings record reduce your future benefit. Review your projected benefit at 62, full retirement age (67), and 70. Free, takes 5 minutes (Social Security Administration, 2025).',pri:'med'});
   const em=Math.round(f.salary/12*3);
-  items.push({id:'emg',label:`Build a ${fmtM(em)} emergency fund (3 months expenses) outside retirement accounts`,det:`Without this buffer, retirement accounts become the emergency fund of last resort — triggering taxes and the 10% early withdrawal penalty. In 2024, 4.8% of plan participants took hardship withdrawals, up from 3.6% the year before (Vanguard, 2025).`,pri:'med'});
+  items.push({id:'emg',label:`Build a ${fmtM(em)} emergency fund (3 months expenses) outside retirement accounts`,det:`Without this buffer, retirement accounts become the emergency fund of last resort  -  triggering taxes and the 10% early withdrawal penalty. In 2024, 4.8% of plan participants took hardship withdrawals, up from 3.6% the year before (Vanguard, 2025).`,pri:'med'});
   if(f.age>=50)items.push({id:'cu',label:'Verify and maximize catch-up contribution with plan administrator',det:'Workers 50+ may contribute an additional $7,500 to a 401(k). Workers aged 60–63 may contribute $11,250 extra under SECURE 2.0 Act, Pub. L. 117-328 (IRS, 2025).',pri:'high'});
   if(f.hasDebt==='yes'&&f.debtRate>7)items.push({id:'dbt',label:`Develop a payoff strategy for high-interest debt at ${f.debtRate}%`,det:`Debt above ~7% typically warrants accelerated paydown over supplemental retirement contributions, once the employer match is captured (Bivens & Mishel, 2015).`,pri:'high'});
   if(f.age>=55)items.push({id:'ss2',label:'Model Social Security claiming scenarios at ssa.gov/myaccount',det:'Delaying from 62 to 70 increases monthly benefit by up to 77%. Break-even is typically around age 80–82. This decision carries more financial impact than most investment choices (Social Security Administration, 2025).',pri:'med'});
-  if(f.savings>=50000)items.push({id:'adv',label:'Schedule a one-time session with a fee-only fiduciary financial advisor',det:'Find vetted advisors at napfa.org. Fee-only advisors charge directly — no commissions — and are legally required to act in your interest.',pri:'low'});
+  if(f.savings>=50000)items.push({id:'adv',label:'Schedule a one-time session with a fee-only fiduciary financial advisor',det:'Find vetted advisors at napfa.org. Fee-only advisors charge directly  -  no commissions  -  and are legally required to act in your interest.',pri:'low'});
   return items;
 }
 
@@ -360,25 +423,25 @@ let S={screen:'landing',step:0,profile:null,activeModId:null,activeSec:0,complet
 function setState(patch){if(typeof patch==='function')patch=patch(S);Object.assign(S,patch);render()}
 function getMC(id,f){
   const st=gstats(f),sp=SPGM[f.state],stR=STAX[f.state]||0.05,yl=st.yearsLeft;
-  function callout(rows,note){let inner=rows.map(([k,v])=>`<div class="dc-row"><span class="dc-key">${k}</span><span class="dc-val">${v}</span></div>`).join('');const ctx=f.name?`Based on ${f.name}`:'Based on your profile';return`<div class="data-callout"><div class="dc-label">${ctx} — age ${f.age}, ${SN[f.state]||f.state}, ${fmtM(f.salary)} salary</div>${inner}${note?`<div class="dc-note">${note}</div>`:''}</div>`}
+  function callout(rows,note){let inner=rows.map(([k,v])=>`<div class="dc-row"><span class="dc-key">${k}</span><span class="dc-val">${v}</span></div>`).join('');const ctx=f.name?`Based on ${f.name}`:'Based on your profile';return`<div class="data-callout"><div class="dc-label">${ctx}  -  age ${f.age}, ${SN[f.state]||f.state}, ${fmtM(f.salary)} salary</div>${inner}${note?`<div class="dc-note">${note}</div>`:''}</div>`}
   function spBlock(){if(!sp)return`<p>Your state does not currently operate a state-administered retirement savings program. Workers without employer plans in ${SN[f.state]||f.state} should open a traditional or Roth IRA independently. The 2025 IRA contribution limit is $7,000, with an additional $1,000 catch-up for workers aged 50+ (IRS, 2025).</p>`;return`<div class="state-program-card"><div class="spc-label">State Program in ${SN[f.state]||f.state}</div><div class="spc-name">${sp.name}</div><div class="spc-body">Default enrollment: ${sp.rate}% of gross pay. ${sp.note} On your salary of ${fmtM(f.salary)}, the default contribution is ${fmtM(f.salary*sp.rate/100)}/year.</div></div>`}
 
   if(id==='compound'){
     const fv10=fv(200,7,yl),fv10d=fv(200,7,Math.max(yl-10,1)),diff=fv10-fv10d,mc5=f.salary*0.05/12,p5=grow(f.savings,7,yl)+fv(mc5,7,yl);
-    return[{head:'The Mathematics of Time',body:`<p>Compound interest is the process by which investment returns generate their own returns over time. The longer the compounding period, the more the function resembles exponential growth rather than linear accumulation. This makes the age at which a worker begins contributing the most consequential variable in determining retirement wealth — more so than contribution rate, investment selection, or plan type.</p><p>Consider two workers, each contributing $200 per month to a diversified index portfolio producing 7% real annual returns (Siegel, 2014). The first starts at age ${f.age}. The second waits ten years. By retirement at 65, the first accumulates roughly ${fmtM(fv10)}, while the second accumulates roughly ${fmtM(fv10d)}. The ten-year delay costs approximately ${fmtM(diff)} — not because of the contributions missed, but because they compounded for a decade longer.</p>`+callout([['Years until retirement at 65',yl+' years'],[`$200/month starting today at 7% real growth`,fmtM(fv10)],[`$200/month starting 10 years later`,fmtM(fv10d)],['Cost of a 10-year delay',fmtM(diff)]],'7% real annual return is consistent with long-run historical U.S. equity market performance net of inflation (Siegel, 2014; Damodaran, 2025). Individual results will vary.')+`<p>Only 28% of workers aged 18–24 have ever calculated what they will need in retirement savings, and even among those approaching retirement (ages 55–64), this figure reaches only 48% (Lusardi & Mitchell, 2014). The JITFE mandate is designed to address this: education at the exact moment a worker enrolls in a plan, not years before they have one.</p>`,source:'Siegel, J. (2014). Stocks for the Long Run. McGraw-Hill. Lusardi, A. & Mitchell, O. (2014). The Economic Importance of Financial Literacy. Journal of Economic Literature, 52(1), 5–44.'},
-    {head:'What Your Numbers Look Like at Retirement',body:`<p>Using your current savings and assuming a 5% of salary contribution rate going forward, your retirement account would reach approximately ${fmtM(p5)} by age 65. The conventional retirement income target is 10 to 12 times your final salary — approximately ${fmtM(st.target)} at your current income level (iOme Challenge, 2026).</p>`+callout([['Current savings',fmtM(f.savings)],['Projected at 65 (5% contribution, 7% growth)',fmtM(p5)],['Target (12× salary)',fmtM(st.target)],['Monthly contribution needed to close the gap',fmtM(st.needed)+'/month']],f.savings===0?'Starting from zero is recoverable. The earlier contributions begin, the more the compounding effect reduces the monthly amount required.':'')+`<p>The most important action available to you right now is enrollment at any contribution level. Workers presented with plan enrollment as the default option participate at rates approaching 91%, compared to roughly 28% under opt-in structures (Madrian & Shea, 2001; Congressional Research Service, 2025).</p>`+(sp?spBlock():'')},
+    return[{head:'The Mathematics of Time',body:`<p>Compound interest is the process by which investment returns generate their own returns over time. The longer the compounding period, the more the function resembles exponential growth rather than linear accumulation. This makes the age at which a worker begins contributing the most consequential variable in determining retirement wealth  -  more so than contribution rate, investment selection, or plan type.</p><p>Consider two workers, each contributing $200 per month to a diversified index portfolio producing 7% real annual returns (Siegel, 2014). The first starts at age ${f.age}. The second waits ten years. By retirement at 65, the first accumulates roughly ${fmtM(fv10)}, while the second accumulates roughly ${fmtM(fv10d)}. The ten-year delay costs approximately ${fmtM(diff)}  -  not because of the contributions missed, but because they compounded for a decade longer.</p>`+callout([['Years until retirement at 65',yl+' years'],[`$200/month starting today at 7% real growth`,fmtM(fv10)],[`$200/month starting 10 years later`,fmtM(fv10d)],['Cost of a 10-year delay',fmtM(diff)]],'7% real annual return is consistent with long-run historical U.S. equity market performance net of inflation (Siegel, 2014; Damodaran, 2025). Individual results will vary.')+`<p>Only 28% of workers aged 18–24 have ever calculated what they will need in retirement savings, and even among those approaching retirement (ages 55–64), this figure reaches only 48% (Lusardi & Mitchell, 2014). The JITFE mandate is designed to address this: education at the exact moment a worker enrolls in a plan, not years before they have one.</p>`,source:'Siegel, J. (2014). Stocks for the Long Run. McGraw-Hill. Lusardi, A. & Mitchell, O. (2014). The Economic Importance of Financial Literacy. Journal of Economic Literature, 52(1), 5–44.'},
+    {head:'What Your Numbers Look Like at Retirement',body:`<p>Using your current savings and assuming a 5% of salary contribution rate going forward, your retirement account would reach approximately ${fmtM(p5)} by age 65. The conventional retirement income target is 10 to 12 times your final salary  -  approximately ${fmtM(st.target)} at your current income level (iOme Challenge, 2026).</p>`+callout([['Current savings',fmtM(f.savings)],['Projected at 65 (5% contribution, 7% growth)',fmtM(p5)],['Target (12x salary)',fmtM(st.target)],['Monthly contribution needed to close the gap',fmtM(st.needed)+'/month']],f.savings===0?'Starting from zero is recoverable. The earlier contributions begin, the more the compounding effect reduces the monthly amount required.':'')+`<p>The most important action available to you right now is enrollment at any contribution level. Workers presented with plan enrollment as the default option participate at rates approaching 91%, compared to roughly 28% under opt-in structures (Madrian & Shea, 2001; Congressional Research Service, 2025).</p>`+(sp?spBlock():'')},
     ];}
 
   if(id==='paycheck'){
     const fica=f.salary*0.0765,fed=f.salary<44725?f.salary*0.10:f.salary<95375?f.salary*0.18:f.salary*0.23,stW=f.salary*stR*0.9,k401=f.salary*0.05,th=f.salary-fica-fed-stW-k401;
     return[{head:'The Gap Between Gross and Net Pay',body:`<p>Your gross pay is the amount you earned before any deductions. Your net pay is what you actually receive. The difference reflects mandatory deductions and elective ones you control.</p>`+callout([['Gross annual salary',fmtM(f.salary)],['FICA (Social Security + Medicare, 7.65%)',fmtM(fica)],['Estimated federal income tax withholding',fmtM(fed)],[`Estimated ${SN[f.state]||f.state} state income tax`,fmtM(stW)],['Estimated 5% retirement contribution',fmtM(k401)],['Estimated annual take-home',fmtM(th)]],'These are estimates. Actual amounts depend on your W-4 elections, filing status, and additional deductions. Review your pay statement for precise figures.')},
-    {head:'Pre-Tax and Post-Tax: The Decision That Compounds',body:`<p>Traditional 401(k) contributions are deducted before taxes. This reduces your taxable income in the year of contribution. A 5% contribution on a ${fmtM(f.salary)} salary reduces your taxable income by ${fmtM(k401)}, saving approximately ${fmtM(k401*(f.salary<44725?0.12:0.22))} in federal taxes this year. The tradeoff: withdrawals in retirement are taxed as ordinary income (IRS, 2025).</p><p>Roth 401(k) contributions are made with after-tax dollars. You receive no immediate tax reduction, but qualified withdrawals in retirement — including all accumulated growth — are completely tax-free. For workers early in their careers whose current income is in a lower tax bracket than they expect at retirement, Roth treatment typically produces better long-run outcomes.</p><p>The choice between traditional and Roth treatment is not permanent. Most plans allow workers to change their designation for future contributions at any time. A useful default for early-career workers: Roth treatment, then reevaluate at each significant salary increase.</p>`},
+    {head:'Pre-Tax and Post-Tax: The Decision That Compounds',body:`<p>Traditional 401(k) contributions are deducted before taxes. This reduces your taxable income in the year of contribution. A 5% contribution on a ${fmtM(f.salary)} salary reduces your taxable income by ${fmtM(k401)}, saving approximately ${fmtM(k401*(f.salary<44725?0.12:0.22))} in federal taxes this year. The tradeoff: withdrawals in retirement are taxed as ordinary income (IRS, 2025).</p><p>Roth 401(k) contributions are made with after-tax dollars. You receive no immediate tax reduction, but qualified withdrawals in retirement  -  including all accumulated growth  -  are completely tax-free. For workers early in their careers whose current income is in a lower tax bracket than they expect at retirement, Roth treatment typically produces better long-run outcomes.</p><p>The choice between traditional and Roth treatment is not permanent. Most plans allow workers to change their designation for future contributions at any time. A useful default for early-career workers: Roth treatment, then reevaluate at each significant salary increase.</p>`},
     ];}
 
   if(id==='matching'){
     const mc=f.matchType==='none'?0:f.salary*(f.matchUpTo/100)*(f.matchPct/100),minC=f.matchType==='none'?0:f.salary*(f.matchUpTo/100),vv=f.yearsEmployed>=3?mc*f.yearsEmployed:mc*f.yearsEmployed*0.6;
-    return[{head:'The Mechanics of Employer Matching',body:f.matchType==='none'?`<p>Your current plan configuration does not include employer matching. This places you among approximately 62.6 million workers who have access to an employer-sponsored plan but receive no employer match (Bureau of Labor Statistics, 2023). Without a match, the case for maximizing contributions rests on tax advantages rather than guaranteed returns.</p>`+spBlock()+`<p>Without a match, your contribution decision compares the tax advantage of deferring income against alternative uses of that capital. For most workers, maximizing contributions to the IRS limit remains the preferred approach.</p>`:`<p>Your employer matches ${f.matchPct}% of contributions up to ${f.matchUpTo}% of your salary. To capture the full match, contribute at least ${fmtM(minC)}/year (${fmtM(minC/12)}/month). Your employer then contributes an additional ${fmtM(mc)} per year on your behalf.</p>`+callout([['Your salary',fmtM(f.salary)],['Contribution required for full match',fmtM(minC)+'/year ('+f.matchUpTo+'% of salary)'],['Annual employer match at full capture',fmtM(mc)],['Effective return on matched contribution',f.matchPct+'% before any investment gain']],'Not contributing enough to capture the full match is the functional equivalent of declining a portion of your compensation. The match is earned compensation that requires action to collect.')+`<p>No other investment vehicle offers a guaranteed ${f.matchPct}% return before any market performance is considered. Approximately 62.6 million American workers with access to an employer-sponsored plan receive no employer match — for those who do, failing to contribute to the match threshold is among the most costly financial decisions available (Bureau of Labor Statistics, 2023).</p>`,source:'Bureau of Labor Statistics. (2023). 73 Percent of Civilian Workers Had Access to Retirement Benefits. BLS.gov.'},
-    {head:'How Vesting Changes the Calculation',body:`<p>Employer matching contributions are typically subject to vesting schedules. You do not own the match until you meet the service requirement. Cliff vesting grants 100% ownership after a fixed period, usually two to three years. Graded vesting phases in ownership incrementally over three to six years.</p><p>Based on your ${f.yearsEmployed} ${f.yearsEmployed===1?'year':'years'} of tenure, your estimated unvested employer contributions are approximately ${fmtM(f.yearsEmployed<3?mc*f.yearsEmployed*0.4:0)}. Two-thirds of employees cannot correctly state their vesting schedule (Vanguard, 2025) — this matters specifically at job transition moments, when leaving before full vesting permanently forfeits the unvested balance.</p>`+callout([['Years at current employer',f.yearsEmployed],['Annual employer match (if fully contributing)',fmtM(mc)],['Accumulated match to date (estimate)',fmtM(mc*f.yearsEmployed)],['Estimated unvested portion',fmtM(f.yearsEmployed<3?mc*f.yearsEmployed*0.4:0)]],'Exact vesting status can be confirmed in your benefits portal or by contacting HR. This estimate uses a simplified 3-year cliff assumption.')},
+    return[{head:'The Mechanics of Employer Matching',body:f.matchType==='none'?`<p>Your current plan configuration does not include employer matching. This places you among approximately 62.6 million workers who have access to an employer-sponsored plan but receive no employer match (Bureau of Labor Statistics, 2023). Without a match, the case for maximizing contributions rests on tax advantages rather than guaranteed returns.</p>`+spBlock()+`<p>Without a match, your contribution decision compares the tax advantage of deferring income against alternative uses of that capital. For most workers, maximizing contributions to the IRS limit remains the preferred approach.</p>`:`<p>Your employer matches ${f.matchPct}% of contributions up to ${f.matchUpTo}% of your salary. To capture the full match, contribute at least ${fmtM(minC)}/year (${fmtM(minC/12)}/month). Your employer then contributes an additional ${fmtM(mc)} per year on your behalf.</p>`+callout([['Your salary',fmtM(f.salary)],['Contribution required for full match',fmtM(minC)+'/year ('+f.matchUpTo+'% of salary)'],['Annual employer match at full capture',fmtM(mc)],['Effective return on matched contribution',f.matchPct+'% before any investment gain']],'Not contributing enough to capture the full match is the functional equivalent of declining a portion of your compensation. The match is earned compensation that requires action to collect.')+`<p>No other investment vehicle offers a guaranteed ${f.matchPct}% return before any market performance is considered. Approximately 62.6 million American workers with access to an employer-sponsored plan receive no employer match  -  for those who do, failing to contribute to the match threshold is among the most costly financial decisions available (Bureau of Labor Statistics, 2023).</p>`,source:'Bureau of Labor Statistics. (2023). 73 Percent of Civilian Workers Had Access to Retirement Benefits. BLS.gov.'},
+    {head:'How Vesting Changes the Calculation',body:`<p>Employer matching contributions are typically subject to vesting schedules. You do not own the match until you meet the service requirement. Cliff vesting grants 100% ownership after a fixed period, usually two to three years. Graded vesting phases in ownership incrementally over three to six years.</p><p>Based on your ${f.yearsEmployed} ${f.yearsEmployed===1?'year':'years'} of tenure, your estimated unvested employer contributions are approximately ${fmtM(f.yearsEmployed<3?mc*f.yearsEmployed*0.4:0)}. Two-thirds of employees cannot correctly state their vesting schedule (Vanguard, 2025)  -  this matters specifically at job transition moments, when leaving before full vesting permanently forfeits the unvested balance.</p>`+callout([['Years at current employer',f.yearsEmployed],['Annual employer match (if fully contributing)',fmtM(mc)],['Accumulated match to date (estimate)',fmtM(mc*f.yearsEmployed)],['Estimated unvested portion',fmtM(f.yearsEmployed<3?mc*f.yearsEmployed*0.4:0)]],'Exact vesting status can be confirmed in your benefits portal or by contacting HR. This estimate uses a simplified 3-year cliff assumption.')},
     ];}
 
   if(id==='vesting'){
@@ -390,13 +453,13 @@ function getMC(id,f){
   if(id==='debt'){
     const matchMin=f.salary*(f.matchUpTo/100),matchAnn=f.salary*(f.matchUpTo/100)*(f.matchPct/100);
     return[{head:'The Prioritization Framework',body:`<p>The conventional allocation hierarchy for income with competing obligations: high-interest debt elimination first, then retirement savings up to the employer match threshold, then continued debt reduction, then supplemental contributions above the match.</p><p>The logic for prioritizing the employer match over moderate debt repayment rests on the guaranteed return. Your employer match rate of ${f.matchPct}% on contributions up to ${f.matchUpTo}% of salary represents a ${f.matchPct}% guaranteed return before any investment gains. No debt repayment strategy offers a comparable return (Bivens & Mishel, 2015).</p>`+callout([['Annual salary',fmtM(f.salary)],['Minimum contribution to capture full match',fmtM(matchMin)+'/year'],['Annual match value at full capture',fmtM(matchAnn)],['Effective guaranteed return on matched portion',f.matchPct+'%'],[f.hasDebt==='yes'?'Estimated annual debt interest cost':'Student debt',f.hasDebt==='yes'?fmtM(f.debtAmt*f.debtRate/100):'None reported']],f.hasDebt==='yes'&&f.debtRate>7?`Your debt rate of ${f.debtRate}% exceeds the ~7–8% threshold. After capturing the full employer match, additional income may produce better outcomes directed toward debt reduction.`:'After capturing the full match, additional income toward retirement contributions is generally preferred over accelerated debt repayment at rates below 7–8%.'),source:'Bivens, J. & Mishel, L. (2015). Understanding the Historic Divergence Between Productivity and a Typical Worker\'s Pay. Economic Policy Institute.'},
-    {head:f.hasDebt==='yes'?'Federal Student Loan Specifics':'Building Both Simultaneously',body:f.hasDebt==='yes'?`<p>For workers with federal student loans, income-driven repayment plans calculate required monthly payments as a percentage of discretionary income. This structure creates capacity for retirement savings even when total income is modest, by capping loan payments proportionally rather than requiring fixed amortization regardless of income changes.</p><p>Electing income-based repayment does not preclude retirement saving. The relevant decision is whether excess cash flow above the minimum income-driven payment should go toward accelerated loan repayment or retirement contributions — which returns to the interest rate comparison above.</p><p>Public Service Loan Forgiveness, available to workers in qualifying government and nonprofit roles, changes this calculation substantially by reducing the effective cost of federal loans to zero over a 10-year qualifying period. Workers in eligible roles should model both the forgiveness scenario and the standard repayment scenario before committing to an aggressive payoff strategy.</p>`:`<p>Workers without significant debt have a simpler allocation problem: how to divide excess income between current consumption and retirement savings. The answer is largely a function of employer match availability, current tax bracket, and years until retirement.</p><p>The most common behavioral failure at this stage is not competing obligations but inertia. Research on 401(k) participation consistently finds that workers with access to a plan and no significant competing obligations still fail to participate at rates approaching 44%. Once contributions are established through automatic payroll deduction, they persist at high rates even when workers experience income changes (Thaler & Sunstein, 2008).</p>`},
+    {head:f.hasDebt==='yes'?'Federal Student Loan Specifics':'Building Both Simultaneously',body:f.hasDebt==='yes'?`<p>For workers with federal student loans, income-driven repayment plans calculate required monthly payments as a percentage of discretionary income. This structure creates capacity for retirement savings even when total income is modest, by capping loan payments proportionally rather than requiring fixed amortization regardless of income changes.</p><p>Electing income-based repayment does not preclude retirement saving. The relevant decision is whether excess cash flow above the minimum income-driven payment should go toward accelerated loan repayment or retirement contributions  -  which returns to the interest rate comparison above.</p><p>Public Service Loan Forgiveness, available to workers in qualifying government and nonprofit roles, changes this calculation substantially by reducing the effective cost of federal loans to zero over a 10-year qualifying period. Workers in eligible roles should model both the forgiveness scenario and the standard repayment scenario before committing to an aggressive payoff strategy.</p>`:`<p>Workers without significant debt have a simpler allocation problem: how to divide excess income between current consumption and retirement savings. The answer is largely a function of employer match availability, current tax bracket, and years until retirement.</p><p>The most common behavioral failure at this stage is not competing obligations but inertia. Research on 401(k) participation consistently finds that workers with access to a plan and no significant competing obligations still fail to participate at rates approaching 44%. Once contributions are established through automatic payroll deduction, they persist at high rates even when workers experience income changes (Thaler & Sunstein, 2008).</p>`},
     ];}
 
   if(id==='rollover'){
     const w=wdraw(f);
-    return[{head:'Why the Rollover Problem Is a Design Problem, Not a Motivation Problem',body:`<p>Among workers who change jobs, 41.4% withdraw their retirement account balance rather than rolling it over to a new plan or IRA. Among that group, 85% withdraw the entire balance. The reason cited most frequently is not financial hardship or urgent need — it is that the rollover process is too complicated (UBC Sauder School of Business, 2023).</p><p>This is a design failure, not an individual failure. The rollover process as currently structured requires initiating contact with the former plan administrator, selecting a receiving institution, completing forms from both sides, tracking a check or wire transfer that may take up to 60 days, and monitoring completion. 79% of savers must make at least one phone call to complete a rollover, and 43% deal with a physical paper check (Capitalize, 2024). Workers who have just changed jobs are managing competing administrative demands — the path of least resistance is to cash out.</p>`+(f.savings>0?callout([['Your current retirement savings',fmtM(f.savings)],['Combined tax and penalty rate on a full withdrawal',fmtPct(w.totalRate*100)],['Taxes and penalties on a full withdrawal',fmtM(w.taxPaid)],['Take-home after taxes and penalties',fmtM(w.takeHome)],['What that same balance becomes by 65 at 7% growth',fmtM(w.futureValue)],['True cost of cashing out (opportunity cost)',fmtM(w.futureValue-w.takeHome)]],`Your state of ${SN[f.state]||f.state} has a ${fmtPct(stR*100)} state income tax rate. Combined with the federal rate and the 10% early withdrawal penalty, cashing out your current ${fmtM(f.savings)} would cost approximately ${fmtM(w.taxPaid)} immediately. The long-term cost is substantially larger.`):'')+`<p>A dollar withdrawn today costs the future value of that dollar at retirement — which over ${yl} years at 7% real growth is approximately ${fmtM(grow(1,7,yl))} dollars.</p>`,source:'UBC Sauder School of Business. (2023). Americans Are Cashing Out Their Retirement Savings at an Alarming Rate. Capitalize. (2024). The State of 401(k) Rollovers White Paper.'},
-    {head:'The Three Paths and How to Execute the Right One',body:`<p>A <strong>direct rollover</strong> transfers funds from your former plan directly to a new plan or IRA. The money does not pass through your hands. No taxes are withheld and no penalty applies. This is the appropriate choice for the large majority of workers in the large majority of circumstances.</p><p>An <strong>indirect rollover</strong> distributes the funds to your bank account, with 20% withheld for federal taxes. You have 60 days to deposit the entire original balance — including the withheld 20% — into a qualifying account. If you deposit only the net amount received, the withheld 20% is treated as a permanent taxable distribution subject to the 10% penalty.</p><p>Leaving the account with your former employer is permitted for balances above $5,000 and is a reasonable temporary choice. It is not a permanent solution — orphaned accounts accumulate fees and are frequently lost during subsequent job changes.</p><p>To initiate a direct rollover: contact the former plan administrator and request a direct rollover to the receiving institution. If you have not yet chosen a custodian, a traditional or Roth IRA at Vanguard, Fidelity, or Schwab serves as an appropriate temporary vehicle. Average processing time is 60 days — initiate before your last day of employment where possible (Capitalize, 2024).</p>`},
+    return[{head:'Why the Rollover Problem Is a Design Problem, Not a Motivation Problem',body:`<p>Among workers who change jobs, 41.4% withdraw their retirement account balance rather than rolling it over to a new plan or IRA. Among that group, 85% withdraw the entire balance. The reason cited most frequently is not financial hardship or urgent need  -  it is that the rollover process is too complicated (UBC Sauder School of Business, 2023).</p><p>This is a design failure, not an individual failure. The rollover process as currently structured requires initiating contact with the former plan administrator, selecting a receiving institution, completing forms from both sides, tracking a check or wire transfer that may take up to 60 days, and monitoring completion. 79% of savers must make at least one phone call to complete a rollover, and 43% deal with a physical paper check (Capitalize, 2024). Workers who have just changed jobs are managing competing administrative demands  -  the path of least resistance is to cash out.</p>`+(f.savings>0?callout([['Your current retirement savings',fmtM(f.savings)],['Combined tax and penalty rate on a full withdrawal',fmtPct(w.totalRate*100)],['Taxes and penalties on a full withdrawal',fmtM(w.taxPaid)],['Take-home after taxes and penalties',fmtM(w.takeHome)],['What that same balance becomes by 65 at 7% growth',fmtM(w.futureValue)],['True cost of cashing out (opportunity cost)',fmtM(w.futureValue-w.takeHome)]],`Your state of ${SN[f.state]||f.state} has a ${fmtPct(stR*100)} state income tax rate. Combined with the federal rate and the 10% early withdrawal penalty, cashing out your current ${fmtM(f.savings)} would cost approximately ${fmtM(w.taxPaid)} immediately. The long-term cost is substantially larger.`):'')+`<p>A dollar withdrawn today costs the future value of that dollar at retirement  -  which over ${yl} years at 7% real growth is approximately ${fmtM(grow(1,7,yl))} dollars.</p>`,source:'UBC Sauder School of Business. (2023). Americans Are Cashing Out Their Retirement Savings at an Alarming Rate. Capitalize. (2024). The State of 401(k) Rollovers White Paper.'},
+    {head:'The Three Paths and How to Execute the Right One',body:`<p>A <strong>direct rollover</strong> transfers funds from your former plan directly to a new plan or IRA. The money does not pass through your hands. No taxes are withheld and no penalty applies. This is the appropriate choice for the large majority of workers in the large majority of circumstances.</p><p>An <strong>indirect rollover</strong> distributes the funds to your bank account, with 20% withheld for federal taxes. You have 60 days to deposit the entire original balance  -  including the withheld 20%  -  into a qualifying account. If you deposit only the net amount received, the withheld 20% is treated as a permanent taxable distribution subject to the 10% penalty.</p><p>Leaving the account with your former employer is permitted for balances above $5,000 and is a reasonable temporary choice. It is not a permanent solution  -  orphaned accounts accumulate fees and are frequently lost during subsequent job changes.</p><p>To initiate a direct rollover: contact the former plan administrator and request a direct rollover to the receiving institution. If you have not yet chosen a custodian, a traditional or Roth IRA at Vanguard, Fidelity, or Schwab serves as an appropriate temporary vehicle. Average processing time is 60 days  -  initiate before your last day of employment where possible (Capitalize, 2024).</p>`},
     ];}
 
   if(id==='catchup'){
@@ -407,20 +470,20 @@ function getMC(id,f){
 
   if(id==='socsec'){
     const eb=Math.min(Math.round(f.salary*0.35/12),3822),at62=Math.round(eb*0.70),at70=Math.round(eb*1.24),bev=Math.round(67+(eb*12*5)/(at70-eb)/12);
-    return[{head:'How Your Benefit Is Calculated',body:`<p>Social Security retirement benefits are computed from your highest 35 years of indexed earnings. If you worked fewer than 35 years, zeros are included for the missing years, reducing the average. The resulting figure — the Primary Insurance Amount — represents the monthly benefit payable at your full retirement age (67 for workers born in 1960 or later) (Social Security Administration, 2025).</p>`+callout([['Estimated current salary',fmtM(f.salary)],['Estimated monthly benefit at full retirement age (67)',fmtM(eb)+'/month'],['Benefit at 62 (earliest claim, 30% reduction)',fmtM(at62)+'/month'],['Benefit at 70 (maximum delay, 24% increase)',fmtM(at70)+'/month'],['Annual difference between claiming at 62 vs. 70',fmtM((at70-at62)*12)],['Rough break-even age for delaying to 70','age '+Math.min(bev,82)]],'Benefit estimates are based on a simplified replacement rate calculation. Your actual benefit is based on your complete earnings history. Review your specific projections at ssa.gov/myaccount.')+`<p>Delaying past full retirement age increases your benefit by 8% per year through age 70, after which no further delayed retirement credits accrue (Social Security Administration, 2025). The decision between claiming at 62 versus 70 represents a difference of approximately ${fmtM((at70-at62)*12)} per year, compounding over the duration of your retirement.</p>`,source:'Social Security Administration. (2025). 2025 OASDI Trustees Report: Highlights and Key Dates. SSA.gov.'},
-    {head:'The Break-Even Analysis and What It Does Not Tell You',body:`<p>The standard framework for Social Security claiming decisions is break-even analysis: at what age does the cumulative lifetime benefit from delaying exceed the cumulative benefit from claiming earlier? For the decision between claiming at 67 versus 70, the break-even age is typically around 80 to 82, based on your estimated benefit profile.</p><p>The break-even analysis has a significant limitation. It treats life expectancy as the only variable, but the decision also depends on other income sources during the delay period, the presence of a spouse, health status, and investment opportunity cost. A worker with significant other retirement income during the delay period — who can afford to wait and has good family health history — is the strongest candidate for delayed claiming.</p><p>For married couples, the calculation expands further. Coordinating claiming strategies to maximize the survivor benefit for whichever spouse lives longer is frequently more valuable than either individual's optimal single-claimant strategy. The higher-earning spouse delaying to 70 increases the survivor benefit for the lifetime of the surviving spouse, regardless of which spouse that is.</p><p>Review your personalized benefit projections at ssa.gov/myaccount. The statement includes projected benefits at 62, full retirement age, and 70, based on your actual earnings record.</p>`},
+    return[{head:'How Your Benefit Is Calculated',body:`<p>Social Security retirement benefits are computed from your highest 35 years of indexed earnings. If you worked fewer than 35 years, zeros are included for the missing years, reducing the average. The resulting figure  -  the Primary Insurance Amount  -  represents the monthly benefit payable at your full retirement age (67 for workers born in 1960 or later) (Social Security Administration, 2025).</p>`+callout([['Estimated current salary',fmtM(f.salary)],['Estimated monthly benefit at full retirement age (67)',fmtM(eb)+'/month'],['Benefit at 62 (earliest claim, 30% reduction)',fmtM(at62)+'/month'],['Benefit at 70 (maximum delay, 24% increase)',fmtM(at70)+'/month'],['Annual difference between claiming at 62 vs. 70',fmtM((at70-at62)*12)],['Rough break-even age for delaying to 70','age '+Math.min(bev,82)]],'Benefit estimates are based on a simplified replacement rate calculation. Your actual benefit is based on your complete earnings history. Review your specific projections at ssa.gov/myaccount.')+`<p>Delaying past full retirement age increases your benefit by 8% per year through age 70, after which no further delayed retirement credits accrue (Social Security Administration, 2025). The decision between claiming at 62 versus 70 represents a difference of approximately ${fmtM((at70-at62)*12)} per year, compounding over the duration of your retirement.</p>`,source:'Social Security Administration. (2025). 2025 OASDI Trustees Report: Highlights and Key Dates. SSA.gov.'},
+    {head:'The Break-Even Analysis and What It Does Not Tell You',body:`<p>The standard framework for Social Security claiming decisions is break-even analysis: at what age does the cumulative lifetime benefit from delaying exceed the cumulative benefit from claiming earlier? For the decision between claiming at 67 versus 70, the break-even age is typically around 80 to 82, based on your estimated benefit profile.</p><p>The break-even analysis has a significant limitation. It treats life expectancy as the only variable, but the decision also depends on other income sources during the delay period, the presence of a spouse, health status, and investment opportunity cost. A worker with significant other retirement income during the delay period  -  who can afford to wait and has good family health history  -  is the strongest candidate for delayed claiming.</p><p>For married couples, the calculation expands further. Coordinating claiming strategies to maximize the survivor benefit for whichever spouse lives longer is frequently more valuable than either individual's optimal single-claimant strategy. The higher-earning spouse delaying to 70 increases the survivor benefit for the lifetime of the surviving spouse, regardless of which spouse that is.</p><p>Review your personalized benefit projections at ssa.gov/myaccount. The statement includes projected benefits at 62, full retirement age, and 70, based on your actual earnings record.</p>`},
     ];}
 
   if(id==='withdrawal'){
     const ssE=Math.min(Math.round(f.salary*0.35/12),3822);
-    return[{head:'The Three Tax Structures and Why the Sequence Matters',body:`<p>Retirees typically hold assets across three distinct tax structures. Taxable brokerage accounts generate capital gains taxes on realized gains and dividends but are not subject to required minimum distributions. Tax-deferred accounts — traditional IRAs and 401(k)s — grow without current taxation but require mandatory distributions beginning at age 73, with ordinary income tax on all withdrawals. Tax-exempt accounts — Roth IRAs and Roth 401(k)s — are not subject to required minimum distributions during the account owner's lifetime, and qualified withdrawals are completely tax-free (IRS, 2025).</p><p>The sequence in which these accounts are drawn down determines the annual tax liability in retirement and directly affects the number of years the total portfolio can sustain distributions. Fewer than one-third of Americans approaching or in retirement report having a specific income plan that accounts for this sequencing.</p>`+callout([['Current retirement savings (total)',fmtM(f.savings)],['Years until age 73 (first RMD deadline)',Math.max(73-f.age,0)+' years'],['Estimated monthly Social Security (at 67)',fmtM(ssE)],['Conventional income target (80% pre-retirement)',fmtM(f.salary*0.8/12)+'/month']],'The gap between your estimated Social Security benefit and your income target represents the amount your personal savings must generate each month. Withdrawal sequencing determines how efficiently your savings close this gap over time.'),source:'Internal Revenue Service. (2025). Required Minimum Distributions. IRS.gov.'},
+    return[{head:'The Three Tax Structures and Why the Sequence Matters',body:`<p>Retirees typically hold assets across three distinct tax structures. Taxable brokerage accounts generate capital gains taxes on realized gains and dividends but are not subject to required minimum distributions. Tax-deferred accounts  -  traditional IRAs and 401(k)s  -  grow without current taxation but require mandatory distributions beginning at age 73, with ordinary income tax on all withdrawals. Tax-exempt accounts  -  Roth IRAs and Roth 401(k)s  -  are not subject to required minimum distributions during the account owner's lifetime, and qualified withdrawals are completely tax-free (IRS, 2025).</p><p>The sequence in which these accounts are drawn down determines the annual tax liability in retirement and directly affects the number of years the total portfolio can sustain distributions. Fewer than one-third of Americans approaching or in retirement report having a specific income plan that accounts for this sequencing.</p>`+callout([['Current retirement savings (total)',fmtM(f.savings)],['Years until age 73 (first RMD deadline)',Math.max(73-f.age,0)+' years'],['Estimated monthly Social Security (at 67)',fmtM(ssE)],['Conventional income target (80% pre-retirement)',fmtM(f.salary*0.8/12)+'/month']],'The gap between your estimated Social Security benefit and your income target represents the amount your personal savings must generate each month. Withdrawal sequencing determines how efficiently your savings close this gap over time.'),source:'Internal Revenue Service. (2025). Required Minimum Distributions. IRS.gov.'},
     {head:'The Conventional Sequence and Its Exceptions',body:`<p>The standard guidance is to draw first from taxable accounts, then from tax-deferred accounts, and last from Roth accounts. This preserves the tax-exempt status of Roth balances as long as possible while allowing tax-deferred accounts to continue compounding without current taxation during the early distribution years.</p><p>Required minimum distributions complicate this sequence. Beginning at age 73, you must withdraw a calculated minimum amount from traditional IRAs and 401(k)s annually, regardless of income need. These mandatory withdrawals, combined with Social Security income, can push taxable income into higher brackets and trigger partial taxation of Social Security benefits (IRS, 2025).</p><p>The most effective response is Roth conversion in the years between retirement and the start of Social Security benefits, or between retirement and the beginning of RMDs. Converting traditional balances to Roth during these lower-income years reduces future RMD obligations and shifts assets into the tax-exempt structure at a lower effective rate than would apply once Social Security and RMDs begin simultaneously.</p><p>46% of retirees report that spending down savings creates significant anxiety, and 32% are spending faster than they anticipated before retirement. A written withdrawal sequence plan, developed before retirement with a qualified financial planner, addresses both the psychological and technical dimensions of this challenge.</p>`},
     ];}
 
   if(id==='hardship'){
     const w=wdraw(f);
-    return[{head:'The Full Cost of Early Access',body:`<p>The 10% early withdrawal penalty, assessed by the IRS on distributions before age 59½ (IRC § 72(t)), is the most visible cost of a hardship withdrawal. It is not the largest one. The largest cost is the permanent removal of the principal and all of its future compounding from the retirement account.</p>`+(f.savings>0?callout([['Your current retirement savings',fmtM(f.savings)],['State income tax rate ('+( SN[f.state]||f.state)+')',fmtPct(stR*100)],['Combined federal tax, state tax, and 10% penalty',fmtPct(w.totalRate*100)],['Amount lost to taxes and penalties on a full withdrawal',fmtM(w.taxPaid)],['Take-home after all taxes and penalties',fmtM(w.takeHome)],['What that balance would become at 65 (7% growth)',fmtM(w.futureValue)],['True long-term cost of withdrawal',fmtM(w.futureValue-f.savings)]],`A hardship withdrawal of ${fmtM(f.savings)} today does not cost ${fmtM(f.savings)}. It costs ${fmtM(w.futureValue)} in retirement wealth — the difference between what that money would have become and the ${fmtM(w.takeHome)} you receive after taxes and penalties.`):'')+`<p>In 2024, 4.8% of eligible participants took hardship withdrawals, up from 3.6% the prior year. Leading reasons: eviction or foreclosure prevention (35%), medical expenses (30%), home purchase or repair (16%), and tuition (14%) (Vanguard, 2025). There is also a statutory contradiction: under IRC § 401(k), employers may approve hardship withdrawals for immediate financial needs, but under IRC § 72(t), any withdrawal before age 59½ is subject to a 10% penalty with no exception for hardship. A worker who obtains formal approval for a hardship withdrawal is then penalized by the IRS for doing exactly what the law authorized (Maynard et al., 2025).</p>`,source:'Vanguard. (2025). How America Saves 2025 Preview. Maynard, A. & Wallace, N. (2025). Hardship Withdrawals and the IRC Penalty Gap.'},
-    {head:'Alternatives to Consider Before Withdrawing',body:`<p>A <strong>401(k) plan loan</strong> allows you to borrow against your account balance without triggering taxes or the 10% penalty, provided the loan is repaid within five years. The interest rate is set by the plan (typically prime plus 1%), and the interest is paid to your own account. The critical risk is separation from employment before the loan is repaid — the outstanding balance typically becomes due within 60 to 90 days, and failure to repay converts the balance to a taxable distribution.</p><p>A <strong>Roth IRA</strong>, if you have one, provides partial emergency liquidity without penalty. Contributions to a Roth IRA — though not earnings — can be withdrawn at any time without taxes or penalties, because they were made with after-tax dollars. The distinction between contributions and earnings is critical.</p><p>The systemic solution is an emergency savings fund held entirely outside the retirement account, covering three to six months of essential expenses. At your income level, that target reserve is approximately ${fmtM(f.salary/12*3)} to ${fmtM(f.salary/12*6)}. Building this reserve through payroll deduction into a separate savings account is the most effective way to prevent retirement account leakage from acute financial disruptions.</p>`},
+    return[{head:'The Full Cost of Early Access',body:`<p>The 10% early withdrawal penalty, assessed by the IRS on distributions before age 59½ (IRC § 72(t)), is the most visible cost of a hardship withdrawal. It is not the largest one. The largest cost is the permanent removal of the principal and all of its future compounding from the retirement account.</p>`+(f.savings>0?callout([['Your current retirement savings',fmtM(f.savings)],['State income tax rate ('+( SN[f.state]||f.state)+')',fmtPct(stR*100)],['Combined federal tax, state tax, and 10% penalty',fmtPct(w.totalRate*100)],['Amount lost to taxes and penalties on a full withdrawal',fmtM(w.taxPaid)],['Take-home after all taxes and penalties',fmtM(w.takeHome)],['What that balance would become at 65 (7% growth)',fmtM(w.futureValue)],['True long-term cost of withdrawal',fmtM(w.futureValue-f.savings)]],`A hardship withdrawal of ${fmtM(f.savings)} today does not cost ${fmtM(f.savings)}. It costs ${fmtM(w.futureValue)} in retirement wealth  -  the difference between what that money would have become and the ${fmtM(w.takeHome)} you receive after taxes and penalties.`):'')+`<p>In 2024, 4.8% of eligible participants took hardship withdrawals, up from 3.6% the prior year. Leading reasons: eviction or foreclosure prevention (35%), medical expenses (30%), home purchase or repair (16%), and tuition (14%) (Vanguard, 2025). There is also a statutory contradiction: under IRC § 401(k), employers may approve hardship withdrawals for immediate financial needs, but under IRC § 72(t), any withdrawal before age 59½ is subject to a 10% penalty with no exception for hardship. A worker who obtains formal approval for a hardship withdrawal is then penalized by the IRS for doing exactly what the law authorized (Maynard et al., 2025).</p>`,source:'Vanguard. (2025). How America Saves 2025 Preview. Maynard, A. & Wallace, N. (2025). Hardship Withdrawals and the IRC Penalty Gap.'},
+    {head:'Alternatives to Consider Before Withdrawing',body:`<p>A <strong>401(k) plan loan</strong> allows you to borrow against your account balance without triggering taxes or the 10% penalty, provided the loan is repaid within five years. The interest rate is set by the plan (typically prime plus 1%), and the interest is paid to your own account. The critical risk is separation from employment before the loan is repaid  -  the outstanding balance typically becomes due within 60 to 90 days, and failure to repay converts the balance to a taxable distribution.</p><p>A <strong>Roth IRA</strong>, if you have one, provides partial emergency liquidity without penalty. Contributions to a Roth IRA  -  though not earnings  -  can be withdrawn at any time without taxes or penalties, because they were made with after-tax dollars. The distinction between contributions and earnings is critical.</p><p>The systemic solution is an emergency savings fund held entirely outside the retirement account, covering three to six months of essential expenses. At your income level, that target reserve is approximately ${fmtM(f.salary/12*3)} to ${fmtM(f.salary/12*6)}. Building this reserve through payroll deduction into a separate savings account is the most effective way to prevent retirement account leakage from acute financial disruptions.</p>`},
     ];}
   return[{head:'Content',body:'<p>Content loading.</p>'}];
 }
@@ -435,7 +498,7 @@ function getPNote(id,f){
   if(id==='rollover'){const c=f.savings>0?Math.round(f.savings*0.32):null;return c?`Cashing out your current ${fmtM(f.savings)} would cost approximately ${fmtM(c)} in taxes and penalties alone, not counting future growth.`:'This module covers the direct rollover process and why 41.4% of job changers cash out instead (UBC Sauder, 2023).';}
   if(id==='catchup')return`At ${f.age}, you are ${f.age>=50?'eligible':Math.max(50-f.age,0)+' years from eligibility'} for catch-up contributions. Your projected retirement gap is ${fmtM(st.gap)}.`;
   if(id==='socsec')return`At ${fmtM(f.salary)} salary, your estimated Social Security benefit at 67 is approximately ${fmtM(Math.min(Math.round(f.salary*0.35/12),3822))}/month. Delaying to 70 raises this to ${fmtM(Math.min(Math.round(f.salary*0.35/12*1.24),4873))}/month.`;
-  if(id==='withdrawal')return`Your estimated RMD start age is 73 — ${Math.max(73-f.age,0)} years away. Sequencing decisions made before that window significantly affect lifetime tax liability.`;
+  if(id==='withdrawal')return`Your estimated RMD start age is 73  -  ${Math.max(73-f.age,0)} years away. Sequencing decisions made before that window significantly affect lifetime tax liability.`;
   if(id==='hardship')return f.savings>0?`Cashing out your current ${fmtM(f.savings)} would leave ${fmtM(Math.round(f.savings*0.68))} after taxes and penalties, and permanently eliminate ${fmtM(Math.round(grow(f.savings,7,Math.max(65-f.age,1))))} from your retirement trajectory.`:'This module covers the full cost of hardship withdrawals and the alternatives that preserve your retirement account.';
   return'';
 }
@@ -452,7 +515,7 @@ function renderLanding(){
   const hero=el('div',{class:'hero fu'});
   hero.innerHTML=`<div class="hero-ey"><span class="hero-dot"></span>iOme Challenge 2026 · JITFE Proof of Concept</div>
 <h1>Financial Education That Arrives When It <em>Matters</em></h1>
-<p class="hero-sub">Just-in-Time Financial Education (JITFE) delivers personalized retirement guidance at the exact career moments when it is actionable — new hire, job transition, age milestones — embedded in the HR platforms employees already use.</p>
+<p class="hero-sub">Just-in-Time Financial Education (JITFE) delivers personalized retirement guidance at the exact career moments when it is actionable  -  new hire, job transition, age milestones  -  embedded in the HR platforms employees already use.</p>
 <div class="hero-cta">
   <button class="btn btn-p btn-lg" onclick="setState({screen:'setup'})">Set Up Your Own Profile →</button>
   <button class="btn btn-o btn-lg" onclick="document.getElementById('profiles-section').scrollIntoView({behavior:'smooth'})">View Worker Profiles ↓</button>
@@ -464,7 +527,7 @@ function renderLanding(){
   const how=el('div',{class:'how-wrap fu d1'});
   how.innerHTML=`<div class="sec-ey">How It Works</div>
 <div class="sec-title">Three steps. Zero friction for employees.</div>
-<div class="sec-sub">In a live deployment, steps 1 and 2 are automatic — populated directly from Workday. No setup required for the employee.</div>
+<div class="sec-sub">In a live deployment, steps 1 and 2 are automatic  -  populated directly from Workday. No setup required for the employee.</div>
 <div class="how-steps">
   <div class="how-step"><div class="how-num"><div class="how-icon">👤</div></div><div class="how-ttl">Tell us about you</div><div class="how-desc">Age, salary, state, employment type, and plan access are pulled from your HR system at onboarding or job transition.</div></div>
   <div class="how-step"><div class="how-num"><div class="how-icon">📊</div></div><div class="how-ttl">See your personalized plan</div><div class="how-desc">Your retirement gap, projected balance, and training queue are generated in real time based on your specific career stage and situation.</div></div>
@@ -474,7 +537,7 @@ function renderLanding(){
 
   // Profile cards
   const ps=el('div',{class:'fu d2'});ps.id='profiles-section';
-  ps.innerHTML=`<div class="sec-ey" style="margin-bottom:8px">Worker Profiles</div><div class="sec-title">Select any profile to see the full experience</div><div class="sec-sub">Each profile represents a real retirement security challenge documented in the research literature. Click any card to load their personalized training plan instantly — no setup required.</div>`;
+  ps.innerHTML=`<div class="sec-ey" style="margin-bottom:8px">Worker Profiles</div><div class="sec-title">Select any profile to see the full experience</div><div class="sec-sub">Each profile represents a real retirement security challenge documented in the research literature. Click any card to load their personalized training plan instantly  -  no setup required.</div>`;
   const grid=el('div',{class:'prof-grid'});
   LP.forEach((p,i)=>{
     const card=el('div',{class:`prof-card fu d${Math.min(i+1,8)}`});
@@ -497,6 +560,12 @@ function renderSetup(){
   const wrap=el('div',{class:'setup-wrap'});
 
   // Visual stepper
+  // Back link
+  const setupBack=document.createElement('button');
+  setupBack.className='btn btn-g btn-sm';setupBack.style.cssText='margin-bottom:16px;font-size:13px';
+  setupBack.innerHTML='&larr; Back to profiles';
+  setupBack.onclick=(e)=>{e.stopPropagation();setState({screen:'landing'})};
+  wrap.append(setupBack);
   const stepper=el('div',{class:'stepper'});
   steps.forEach((s,i)=>{
     const step=el('div',{class:'st-step'+(i<S.step?' done':i===S.step?' active':'')});
@@ -524,11 +593,11 @@ function renderSetup(){
     const eo=el('div',{class:'og og2'});
     [['fulltime','Full-time employee'],['parttime','Part-time employee'],['gig','Gig / 1099 worker'],['self','Self-employed']].forEach(([v,l])=>eo.append(ob(l,'',v,'employType')));
     eg.append(eo);card.append(eg);
-    const gg=el('div',{class:'fg'});gg.innerHTML='<label class="fl">Gender <span class="ot">OPTIONAL — affects demographic context in modules</span></label>';
+    const gg=el('div',{class:'fg'});gg.innerHTML='<label class="fl">Gender <span class="ot">OPTIONAL  -  affects demographic context in modules</span></label>';
     const go=el('div',{class:'og og2'});
     [['woman','Woman'],['man','Man'],['nonbinary','Non-binary'],['prefer_not','Prefer not to say']].forEach(([v,l])=>go.append(ob(l,'',v,'gender')));
     gg.append(go);card.append(gg);
-    const raceG=el('div',{class:'fg'});raceG.innerHTML='<label class="fl">Race / Ethnicity <span class="ot">OPTIONAL — used to surface relevant research on structural wealth gaps only</span></label><div class="fsub">Does not change core recommendations. Used to provide systemic context in modules (Federal Reserve, 2022).</div>';
+    const raceG=el('div',{class:'fg'});raceG.innerHTML='<label class="fl">Race / Ethnicity <span class="ot">OPTIONAL  -  used to surface relevant research on structural wealth gaps only</span></label><div class="fsub">Does not change core recommendations. Used to provide systemic context in modules (Federal Reserve, 2022).</div>';
     const rSel=document.createElement('select');rSel.className='fsel';rSel.style.marginTop='8px';
     [['','Prefer not to say'],['white','White or Caucasian'],['black','Black or African American'],['hispanic','Hispanic or Latino'],['asian','Asian or Pacific Islander'],['native','American Indian or Alaska Native'],['multi','Multiracial'],['other','Other']].forEach(([v,l])=>{const o=document.createElement('option');o.value=v;o.textContent=l;if(v===f.race)o.selected=true;rSel.append(o)});
     rSel.onchange=()=>setState(s=>({form:{...s.form,race:rSel.value}}));raceG.append(rSel);card.append(raceG);
@@ -584,13 +653,13 @@ function buildProjectionChart(f){
     f.matchType!=='none'?{label:'6% + employer match',v:c6m,color:'var(--ok)'}:{label:'15% contribution',v:grow(f.savings,7,yl)+fv(f.salary*0.15/12,7,yl),color:'var(--ok)'}
   ];
   const card=el('div',{class:'chart-card'});
-  card.innerHTML=`<div class="ct-ttl">📈 Projected Balance at Age 65</div><div class="ct-sub">Assumes 7% real annual growth (Siegel, 2014; Damodaran, 2025). Target: <strong>${fmtM(tgt)}</strong> (12× salary conventional benchmark)</div>`;
+  card.innerHTML=`<div class="ct-ttl">Projected Balance at Age 65</div><div class="ct-sub" style="font-size:13px">Assumes 7% real annual growth (Siegel, 2014; Damodaran, 2025). Target: <strong style='color:var(--tx)'>${fmtM(tgt)}</strong> (12x salary conventional benchmark)</div>`;
   const wrap=el('div',{class:'ct-wrap'});
   scens.forEach(sc=>{
     const pct=Math.min((sc.v/maxV)*100,100);
     const tpct=Math.min((tgt/maxV)*100,100);
     const g=el('div',{class:'bar-g'});
-    g.innerHTML=`<div class="bar-val">${fmtM(Math.round(sc.v))}</div>`;
+    g.innerHTML=`<div class="bar-val" style="font-size:14px;font-weight:800">${fmtM(Math.round(sc.v))}</div>`;
     const outer=el('div',{class:'bar-o'});
     outer.style.position='relative';
     const tline=el('div',{style:{position:'absolute',bottom:tpct+'%',left:0,right:0,height:'2px',background:'rgba(110,53,62,0.25)',zIndex:2,borderTop:'1px dashed rgba(110,53,62,0.4)'}});
@@ -598,7 +667,7 @@ function buildProjectionChart(f){
     const inner=el('div',{class:'bar-i'});inner.style.cssText=`background:${sc.color};height:0%`;
     outer.append(inner);
     g.append(outer);
-    g.innerHTML+=`<div class="bar-lbl">${sc.label}</div>`;
+    g.innerHTML+=`<div class="bar-lbl" style="font-size:12px;margin-top:4px">${sc.label}</div>`;
     g.insertBefore(outer,g.lastChild);
     wrap.append(g);
     setTimeout(()=>{inner.style.height=pct+'%'},150);
@@ -612,16 +681,17 @@ function buildRingChart(f){
   const pct=Math.round(st.pct);
   const r=44,circ=2*Math.PI*r,off=circ*(1-pct/100);
   const col=pct<40?'var(--dn)':pct<70?'var(--wn)':'var(--ok)';
-  const card=el('div',{class:'chart-card'});
-  card.innerHTML=`<div class="ct-ttl">🎯 Coverage</div><div class="ct-sub">Current trajectory vs. retirement target</div>
-<div class="ring-wrap">
-<svg width="110" height="110" viewBox="0 0 110 110">
-<circle cx="55" cy="55" r="${r}" fill="none" stroke="rgba(110,53,62,0.1)" stroke-width="10"/>
-<circle cx="55" cy="55" r="${r}" fill="none" stroke="${col}" stroke-width="10" stroke-dasharray="${circ}" stroke-dashoffset="${circ}" transform="rotate(-90 55 55)" class="ring-arc" style="transition:stroke-dashoffset 1s ease"/>
-<text x="55" y="50" text-anchor="middle" font-size="20" font-weight="800" fill="${col}">${pct}%</text>
-<text x="55" y="65" text-anchor="middle" font-size="9" fill="var(--tf)">covered</text>
+  const msg=pct<40?'Significant gap - high priority modules assigned':pct<70?'Moderate gap - catch-up modules recommended':'On track - optimization modules available';
+  const card=el('div',{class:'chart-card',style:{overflow:'visible',display:'flex',flexDirection:'column'}});
+  card.innerHTML=`<div class="ct-ttl">Coverage</div><div class="ct-sub">Current trajectory vs. retirement target</div>
+<div style="display:flex;flex-direction:column;align-items:center;padding:4px 0 8px">
+<svg width="120" height="120" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="${r}" fill="none" stroke="rgba(110,53,62,0.1)" stroke-width="11"/>
+<circle cx="60" cy="60" r="${r}" fill="none" stroke="${col}" stroke-width="11" stroke-dasharray="${circ}" stroke-dashoffset="${circ}" transform="rotate(-90 60 60)" class="ring-arc" style="transition:stroke-dashoffset 1s ease"/>
+<text x="60" y="55" text-anchor="middle" font-size="22" font-weight="800" fill="${col}">${pct}%</text>
+<text x="60" y="70" text-anchor="middle" font-size="10" fill="var(--tf)">covered</text>
 </svg>
-<div class="ring-sub">${pct<40?'Significant gap — high priority modules assigned':pct<70?'Moderate gap — catch-up modules recommended':'On track — optimization modules available'}</div>
+<div style="font-size:12px;color:var(--tm);text-align:center;line-height:1.5;margin-top:8px;padding:0 8px;word-wrap:break-word">${msg}</div>
 </div>`;
   setTimeout(()=>{const arc=card.querySelector('.ring-arc');if(arc)arc.style.strokeDashoffset=off},250);
   return card;
@@ -635,7 +705,7 @@ function buildActionChecklist(f){
     const isChk=S.actionChecked.has(item.id);
     const dateVal=S.actionDates[item.id]||'';
     const row=el('div',{class:'ac-item'});
-    const chk=el('div',{class:'ac-chk'+(isChk?' on':''),onclick:()=>{const nc=new Set(S.actionChecked);if(isChk)nc.delete(item.id);else nc.add(item.id);setState({actionChecked:nc})}});
+    const chk=el('div',{class:'ac-chk'+(isChk?' on':''),onclick:(e)=>{e.stopPropagation();const nc=new Set(S.actionChecked);if(isChk)nc.delete(item.id);else nc.add(item.id);setState({actionChecked:nc})}});
     if(isChk)chk.innerHTML='✓';
     const priTag=el('span',{class:'tag '+(item.pri==='high'?'tag-p':item.pri==='med'?'tag-wn':'tag-mu')},item.pri==='high'?'High priority':item.pri==='med'?'Medium':'Optional');
     const body=el('div',{class:'ac-body'});
@@ -648,7 +718,7 @@ function buildActionChecklist(f){
     body.append(lbl,det,dr);
     row.append(chk,body);card.append(row);
   });
-  const calBtn=document.createElement('button');calBtn.className='ac-calb';calBtn.innerHTML='📅 Add Checked Items to Calendar (.ics)';calBtn.onclick=()=>downloadICS(items);
+  const calBtn=document.createElement('button');calBtn.className='ac-calb';calBtn.innerHTML='&#128197; Add Checked Items to Calendar (.ics)';calBtn.onclick=(e)=>{e.preventDefault();e.stopPropagation();downloadICS(items)};
   card.append(calBtn);
   return card;
 }
@@ -672,7 +742,7 @@ function renderDashboard(){
 
   sb.append(el('div',{class:'sb-label'},'Retirement Gap Analysis'));
   const g1=el('div',{class:'gap-card'});
-  g1.innerHTML=`<div class="gap-n">${fmtM(Math.round(st.target))}</div><div class="gap-l">Retirement target (12× salary)</div>`;sb.append(g1);
+  g1.innerHTML=`<div class="gap-n">${fmtM(Math.round(st.target))}</div><div class="gap-l">Retirement target (12x salary)</div>`;sb.append(g1);
   const g2=el('div',{class:'gap-card'});
   const pctVal=Math.round(st.pct);const gClass=pctVal>=70?'ok':pctVal>=40?'wn':'dn';
   g2.innerHTML=`<div class="gap-n" style="color:var(--${gClass})">${fmtM(Math.round(st.projected))}</div><div class="gap-l">Projected balance at 65</div><div class="gap-bw"><div class="gap-bf ${gClass}" style="width:${pctVal}%"></div></div><div class="gap-a">${pctVal}% of target covered at current trajectory</div>`;sb.append(g2);
@@ -687,7 +757,14 @@ function renderDashboard(){
 
   // Main
   const main=el('div',{class:'db-main'});
-  main.append(el('div',{class:'db-sh'},f.name?`Welcome, ${f.name.split(' ')[0]}.`:'Your Financial Wellness Dashboard'));
+  // Back to profiles button
+  const backRow=el('div',{style:{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:'4px'}});
+  backRow.append(el('div',{class:'db-sh'},f.name?`Welcome, ${f.name.split(' ')[0]}.`:'Your Financial Wellness Dashboard'));
+  const backBtn=document.createElement('button');
+  backBtn.className='btn btn-g btn-sm';backBtn.innerHTML='&larr; Back to profiles';
+  backBtn.onclick=(e)=>{e.stopPropagation();setState({screen:'landing'})};
+  backRow.append(backBtn);
+  main.append(backRow);
   main.append(el('div',{class:'db-ss'},`Your personalized training plan based on your ${p.label.toLowerCase()} profile. Complete modules to build a comprehensive retirement strategy.`));
 
   const prog=el('div',{class:'prog-strip'});
@@ -776,11 +853,12 @@ function renderModule(){
   app.append(footer);
 }
 
+let _prevScreen=null;
 function render(){
   const f=S.form;
   if(f.name){document.getElementById('emp-name').textContent=f.name;document.getElementById('emp-initials').textContent=f.name.split(' ').filter(Boolean).map(n=>n[0]).join('').slice(0,2).toUpperCase()||'--'}
   switch(S.screen){case'landing':renderLanding();break;case'setup':renderSetup();break;case'dashboard':renderDashboard();break;case'module':renderModule();break}
-  window.scrollTo(0,0);
+  if(S.screen!==_prevScreen){window.scrollTo(0,0);}_prevScreen=S.screen;
 }
 
 render();
